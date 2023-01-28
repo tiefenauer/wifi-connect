@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/logo.svg';
+import logo_no_background from '../img/logo_no_background.svg'
 import { Navbar, Provider, Container } from 'rendition';
 import { NetworkInfoForm } from './NetworkInfoForm';
 import { Notifications } from './Notifications';
@@ -81,9 +81,12 @@ const App = () => {
 	return (
 		<Provider>
 			<GlobalStyle />
-			<Navbar brand={<img src={logo} style={{ height: 30 }} alt="logo" />} />
+			{/*<Navbar brand={<img src={logo_no_background} style={{ height: 30 }} alt="logo" />} />*/}
 
 			<Container>
+				<div style={{display: 'flex', justifyContent: 'center', height: 150}}>
+					<img src={logo_no_background} style={{ height: '100%' }} alt="logo" />
+				</div>
 				<Notifications
 					attemptedConnect={attemptedConnect}
 					hasAvailableNetworks={
