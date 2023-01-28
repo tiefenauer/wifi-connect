@@ -1,6 +1,6 @@
 import React from 'react';
 import logo_no_background from '../img/logo_no_background.svg'
-import { Navbar, Provider, Container } from 'rendition';
+import { Provider, Container } from 'rendition';
 import { NetworkInfoForm } from './NetworkInfoForm';
 import { Notifications } from './Notifications';
 import { createGlobalStyle } from 'styled-components';
