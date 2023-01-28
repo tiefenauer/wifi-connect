@@ -32,4 +32,6 @@ jobs:
         npm run build
 
     - uses: stefanzweifel/git-auto-commit-action@v4
-
+      with:
+        provider: 'github'
+        token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
