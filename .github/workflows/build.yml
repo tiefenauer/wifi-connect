@@ -30,3 +30,4 @@ jobs:
       run: |
         npm install
         npx webpack
+        npm run build
